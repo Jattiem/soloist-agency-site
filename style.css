@@ -1,0 +1,331 @@
+
+/* =====================
+GLOBAL
+===================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* =====================
+HEADER
+===================== */
+
+header{
+position:sticky;
+top:0;
+background:#0c2d57;
+color:white;
+z-index:1000;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.menu-toggle{
+display:none;
+cursor:pointer;
+}
+
+.hero{
+position:relative;
+background:url('images/20221122_133211.jpg') center/cover no-repeat;
+color:white;
+padding:120px 20px;
+}
+
+.hero-content{
+max-width:650px;
+}
+
+.hero-text{
+font-size:18px;
+margin-top:15px;
+}
+
+.hero-list li{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.hero-list i{
+color:#1e73be;
+margin-right:10px;
+}
+
+.hero-buttons{
+margin-top:25px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn-primary-custom{
+background:#1e73be;
+padding:14px 22px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn-outline-custom{
+border:2px solid white;
+padding:12px 20px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+.hero-text{
+font-size:18px;
+margin-top:15px;
+}
+
+.hero-list li{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.hero-list i{
+color:#1e73be;
+margin-right:10px;
+}
+
+.hero-buttons{
+margin-top:25px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn-primary-custom{
+background:#1e73be;
+padding:14px 22px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn-outline-custom{
+border:2px solid white;
+padding:12px 20px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* =====================
+ABOUT SECTION
+===================== */
+
+img{
+max-width:100%;
+}
+
+/* =====================
+ACCREDITATION LOGOS
+===================== */
+
+.logo-img{
+height:80px;
+object-fit:contain;
+}
+
+/* =====================
+SERVICES SECTION
+===================== */
+
+#services .row{
+display:flex;
+flex-wrap:wrap;
+}
+
+.service-card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:0.3s;
+height:100%;
+}
+
+.service-card:hover{
+transform:translateY(-6px);
+}
+
+.service-icon{
+width:60px;
+height:60px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.service-card ul{
+padding-left:0;
+}
+
+.service-card ul li{
+margin-bottom:8px;
+font-size:14px;
+list-style:none;
+}
+
+.service-card ul li i{
+color:#1e73be;
+margin-right:8px;
+}
+
+/* =====================
+PROJECTS SECTION
+===================== */
+
+.projects{
+background:#f8f8f8;
+padding:60px 0;
+}
+
+.project-img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+height:220px;
+object-fit:cover;
+}
+
+/* =====================
+CONTACT SECTION
+===================== */
+
+.contact-section{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+padding:60px 0;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+}
+
+.contact-box button{
+background:#1e73be;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+padding:14px 18px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+}
+
+footer{
+background:#0c2d57;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* =====================
+MOBILE
+===================== */
+
+@media(max-width:768px){
+
+nav{
+display:none;
+flex-direction:column;
+}
+
+nav.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero{
+
+padding:80px 20px;
+}
+
+}
+
+.project-img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.projects h4{
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.projects ul{
+padding-left:18px;
+}
+
+.about{
+padding:60px 0;
+line-height:1.6;
+}
+
+.about h3{
+margin-top:20px;
+color:#0c2d57;
+}
+
+.project-img{
+height:220px;
+object-fit:cover;
+}
+
+.callbtn{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#0c2d57;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+
