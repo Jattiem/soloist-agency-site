@@ -245,12 +245,18 @@ width:100%;
 
 .whatsapp{
 position:fixed;
+bottom:20px;
 right:20px;
-padding:14px 18px;
-border-radius:50px;
+background:#25D366;
 color:white;
+padding:15px;
+border-radius:50px;
 text-decoration:none;
+z-index:9999;
+font-weight:bold;
+
 }
+
 
 footer{
 background:#0c2d57;
@@ -325,6 +331,7 @@ padding:15px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+z-index:9999;
 }
 
 
