@@ -63,6 +63,13 @@ display:none;
 cursor:pointer;
 }
 
+.header-logo{
+height:55px;
+width:auto;
+object-fit:contain;
+}
+
+
 /*HOME SECTION*/
 
 .hero{
@@ -435,6 +442,10 @@ display:block;
 .hero{
 
 padding:80px 20px;
+}
+
+.header-logo{
+height:45px;
 }
 
 }
