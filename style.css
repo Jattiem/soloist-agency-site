@@ -99,47 +99,6 @@ text-decoration:none;
 font-weight:bold;
 }
 
-
-.hero-text{
-font-size:18px;
-margin-top:15px;
-}
-
-.hero-list li{
-margin-bottom:10px;
-font-size:18px;
-}
-
-.hero-list i{
-color:#1e73be;
-margin-right:10px;
-}
-
-.hero-buttons{
-margin-top:25px;
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.btn-primary-custom{
-background:#1e73be;
-padding:14px 22px;
-border-radius:8px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.btn-outline-custom{
-border:2px solid white;
-padding:12px 20px;
-border-radius:8px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
 /* =====================
 ABOUT SECTION
 ===================== */
@@ -204,9 +163,6 @@ padding-left:0;
 margin-bottom:8px;
 font-size:14px;
 list-style:none;
-}
-
-.service-card ul li i{
 color:#1e73be;
 margin-right:8px;
 }
@@ -228,12 +184,6 @@ height:220px;
 object-fit:cover;
 }
 
-.project-img{
-width:100%;
-border-radius:10px;
-margin-bottom:10px;
-}
-
 .projects h4{
 font-weight:bold;
 margin-bottom:15px;
@@ -241,11 +191,6 @@ margin-bottom:15px;
 
 .projects ul{
 padding-left:18px;
-}
-
-.project-img{
-height:220px;
-object-fit:cover;
 }
 
 /* =====================
