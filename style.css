@@ -17,6 +17,22 @@ max-width:1200px;
 margin:auto;
 }
 
+section h2{
+font-size:34px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.card h3{
+font-size:21px;
+font-weight:600;
+}
+
+body{
+font-size:16px;
+line-height:1.7;
+}
+
 /* =====================
 HEADER SECTION
 ===================== */
@@ -48,12 +64,24 @@ cursor:pointer;
 }
 
 /*HOME SECTION*/
+
 .hero{
 position:relative;
 background:url('images/20221122_133211.jpg') center/cover no-repeat;
 color:white;
 padding:120px 20px;
 }
+
+.hero h1{
+font-size: clamp(28px, 5vw, 52px);
+font-weight:700;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.6;
+}
+
 
 .hero-content{
 max-width:650px;
@@ -295,6 +323,17 @@ font-weight:500;
 background:#155a94;
 }
 
+.why li{
+font-size:16px;
+margin-bottom:10px;
+}
+
+.contact-box input,
+.contact-box textarea{
+font-size:16px;
+}
+
+
 
 /* =====================
 FLOATING BUTTONS
@@ -361,4 +400,31 @@ display:block;
 padding:80px 20px;
 }
 
+}
+
+
+/*FONTS*/
+body{
+font-size:16px;
+line-height:1.7;
+}
+
+h1{
+font-size:clamp(28px,5vw,52px);
+}
+
+h2{
+font-size:34px;
+}
+
+h3{
+font-size:21px;
+}
+
+p{
+font-size:16px;
+}
+
+li{
+font-size:16px;
 }
