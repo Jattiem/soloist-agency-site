@@ -244,27 +244,57 @@ object-fit:cover;
 CONTACT SECTION
 ===================== */
 
-.contact-section{
-display:flex;
-gap:40px;
-flex-wrap:wrap;
-padding:60px 0;
+.contact-info,
+.contact-box{
+background:white;
+padding:30px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
 }
 
-.contact-box input,
-.contact-box textarea{
-width:100%;
-padding:10px;
+.contact-info:hover,
+.contact-box:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 28px rgba(0,0,0,0.15);
+}
+
+.contact-list{
+padding-left:0;
+list-style:none;
+}
+
+.contact-list li{
 margin-bottom:10px;
+font-size:15px;
 }
 
-.contact-box button{
-background:#1e73be;
-color:white;
-padding:10px;
-border:none;
-width:100%;
+.contact-list i{
+color:#1e73be;
+margin-right:8px;
 }
+
+.contact-details p{
+margin-bottom:8px;
+font-size:14px;
+}
+
+.contact-details i{
+color:#1e73be;
+margin-right:8px;
+}
+
+.contact-box .btn-primary{
+background:#1e73be;
+border:none;
+padding:12px;
+font-weight:500;
+}
+
+.contact-box .btn-primary:hover{
+background:#155a94;
+}
+
 
 /* =====================
 FLOATING BUTTONS
