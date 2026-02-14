@@ -202,10 +202,6 @@ margin-right:8px;
 PROJECTS SECTION
 ===================== */
 
-.projects{
-background:#f8f8f8;
-}
-
 .project-card{
 position:relative;
 overflow:hidden;
@@ -269,10 +265,6 @@ object-fit:cover;
 
 
 /* WHY SECTION */
-.why-section{
-background:#f8f8f8;
-}
-
 .why-list li{
 margin-bottom:10px;
 font-size:16px;
@@ -288,6 +280,12 @@ height:220px;
 object-fit:cover;
 width:100%;
 }
+
+.why li{
+font-size:16px;
+margin-bottom:10px;
+}
+
 
 
 /* =====================
@@ -345,10 +343,6 @@ font-weight:500;
 background:#155a94;
 }
 
-.why li{
-font-size:16px;
-margin-bottom:10px;
-}
 
 .contact-box input,
 .contact-box textarea{
@@ -360,10 +354,8 @@ background:white;
 }
 
 .info-box{
-background:#f8f8f8;
 padding:15px;
 border-radius:10px;
-height:100%;
 }
 
 .info-box h5{
