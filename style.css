@@ -130,42 +130,45 @@ object-fit:contain;
 SERVICES SECTION
 ===================== */
 
-#services .row{
-display:flex;
-flex-wrap:wrap;
-}
-
 .service-card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-transition:0.3s;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
 height:100%;
+position:relative;
+overflow:hidden;
 }
 
 .service-card:hover{
-transform:translateY(-6px);
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 14px 28px rgba(0,0,0,0.15);
 }
 
 .service-icon{
-width:60px;
-height:60px;
+width:70px;
+height:70px;
 object-fit:contain;
 margin-bottom:15px;
 }
 
 .service-card ul{
 padding-left:0;
+margin-top:15px;
 }
 
 .service-card ul li{
+list-style:none;
 margin-bottom:8px;
 font-size:14px;
-list-style:none;
+}
+
+.service-card ul li i{
 color:#1e73be;
 margin-right:8px;
 }
+
 
 /* =====================
 PROJECTS SECTION
