@@ -440,34 +440,56 @@ background:#1877F2;
 }
 
 
-/* =====================
-FLOATING BUTTONS
-===================== */
-
-.callbtn{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#0c2d57;
-color:white;
-padding:15px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-z-index:9999;
-}
+/* Floating buttons base */
+.callbtn,
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
-background:#25D366;
-color:white;
-padding:15px;
+display:flex;
+align-items:center;
+gap:10px;
+padding:14px 16px;
 border-radius:50px;
+color:white;
 text-decoration:none;
+font-weight:600;
 z-index:9999;
-font-weight:bold;
+overflow:hidden;
+transition:all 0.3s ease;
+}
 
+/* Positions */
+.callbtn{ bottom:80px; background:#0c2d57; }
+.whatsapp{ bottom:20px; background:#25D366; }
+
+/* Icons bigger */
+.callbtn i,
+.whatsapp i{
+font-size:22px;
+min-width:22px;
+}
+
+/* Hide text initially */
+.callbtn span,
+.whatsapp span{
+max-width:0;
+opacity:0;
+white-space:nowrap;
+transition:all 0.3s ease;
+}
+
+/* Hover expand */
+.callbtn:hover span,
+.whatsapp:hover span{
+max-width:120px;
+opacity:1;
+}
+
+/* Slight grow on hover */
+.callbtn:hover,
+.whatsapp:hover{
+padding-right:20px;
+transform:translateX(-4px);
 }
 
 /* =====================
