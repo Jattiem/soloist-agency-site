@@ -459,8 +459,21 @@ transition:all 0.3s ease;
 }
 
 /* Positions */
-.callbtn{ bottom:80px; background:#0c2d57; }
-.whatsapp{ bottom:20px; background:#25D366; }
+.callbtn{ 
+bottom:90px;   /* was 80 */
+background:#0c2d57; 
+padding-left: 24px;
+padding-top: 18px;
+margin-bottom: 10px;
+}
+
+.whatsapp{ 
+bottom:20px; 
+background:#25D366;
+padding-left: 24px;
+padding-top: 18px;
+}
+
 
 /* Icons bigger */
 .callbtn i,
