@@ -379,6 +379,67 @@ margin-right:6px;
 background:#f8f8f8;
 }
 
+/* Contact links style */
+.info-box a{
+color:#333;
+text-decoration:none;
+transition:0.2s ease;
+}
+
+.info-box a:hover{
+color:#1e73be;
+}
+
+.info-box .bi-whatsapp{
+color:#25D366;
+}
+
+.info-box .bi-facebook{
+color:#1877F2;
+}
+
+.info-box a{
+cursor:pointer;
+}
+
+/* Social icon buttons */
+.info-box .social a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:46px;
+height:46px;
+border-radius:50%;
+text-decoration:none;
+transition:all 0.3s ease;
+padding-left: 5px;
+}
+
+/* Icon size */
+.info-box .social a i{
+font-size:30px;
+transition:all 0.3s ease;
+}
+
+/* Default colors */
+.info-box .social .bi-whatsapp{ color:#25D366; }
+.info-box .social .bi-facebook{ color:#1877F2; }
+
+
+
+/* WhatsApp hover */
+.info-box .social a:hover .bi-whatsapp{ color:white; }
+.info-box .social a:hover:has(.bi-whatsapp){
+background:#25D366;
+}
+
+/* Facebook hover */
+.info-box .social a:hover .bi-facebook{ color:white; }
+.info-box .social a:hover:has(.bi-facebook){
+background:#1877F2;
+}
+
+
 /* =====================
 FLOATING BUTTONS
 ===================== */
