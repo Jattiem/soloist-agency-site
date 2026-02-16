@@ -36,10 +36,15 @@
 </a>
 </nav>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div class="menu-toggle" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
 </div>
 </header>
-
 
 <!--Home Section-->
 <section id="home" class="hero">
@@ -73,19 +78,22 @@ Professional workmanship and maintenance services.
 </div>
 </section>
 
-<!-- Contact Strip -->
+<!-- Contact Strip (Divi Style) -->
 <section class="contact-strip">
-<div class="container contact-strip-flex">
+<div class="container contact-strip-row">
 
-<div class="contact-strip-text">
-<h2>Get a free quote today!</h2>
-<p>Make an appointment with our professional plumbing team.</p>
+<div class="contact-strip-left">
+<div class="strip-title">Need Reliable Plumbing Services?</div>
+<div class="strip-subtitle">Make an Appointment Today</div>
 </div>
 
-<a class="btn-strip" href="#contact">Contact Us</a>
+<div class="contact-strip-right">
+<a href="#contact" class="strip-btn">Contact Us Today</a>
+</div>
 
 </div>
 </section>
+
 
 
 <!--About Section-->
@@ -564,6 +572,8 @@ autocomplete="off"></textarea>
     const currentYear = new Date().getFullYear();
     document.getElementById("year").innerHTML = (startYear === currentYear) ? startYear : `${startYear} - ${currentYear}`;
 </script>
+
+
 
 
 <script src="script.js"></script>

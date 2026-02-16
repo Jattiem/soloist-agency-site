@@ -33,6 +33,38 @@ font-size:16px;
 line-height:1.7;
 }
 
+/* MOBILE MENU TOGGLE */
+.menu-toggle{
+display:none;
+flex-direction:column;
+justify-content:center;
+gap:6px;
+cursor:pointer;
+z-index:1100;
+}
+
+.menu-toggle span{
+width:28px;
+height:3px;
+background:white;
+border-radius:2px;
+transition:all 0.3s ease;
+}
+
+/* Animate to X */
+.menu-toggle.active span:nth-child(1){
+transform:rotate(45deg) translate(5px,5px);
+}
+
+.menu-toggle.active span:nth-child(2){
+opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+transform:rotate(-45deg) translate(6px,-6px);
+}
+
+
 /* =====================
 HEADER SECTION
 ===================== */
@@ -98,12 +130,6 @@ color:white;
 
 .nav-whatsapp::after{
 display:none; /* remove underline effect */
-}
-
-
-.menu-toggle{
-display:none;
-cursor:pointer;
 }
 
 .header-logo{
@@ -212,11 +238,13 @@ z-index:1;
 
 .contact-strip{
 background:#1e73be;
+padding:20px 20px;
 color:white;
-padding:28px 20px;
 }
 
-.contact-strip-flex{
+.contact-strip-row{
+max-width:1100px;
+margin:0 auto;
 display:flex;
 align-items:center;
 justify-content:space-between;
@@ -224,30 +252,43 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-.contact-strip h2{
-margin:0;
-font-size:26px;
+/* LEFT TEXT */
+.contact-strip-left{
+text-align:right;
+}
+
+.strip-title{
+font-size:28px;
 font-weight:700;
+line-height:1.2;
 }
 
-.contact-strip p{
-margin:5px 0 0;
-font-size:16px;
+.strip-subtitle{
+font-size:18px;
+margin-top:6px;
+opacity:0.95;
 }
 
-.btn-strip{
+/* RIGHT BUTTON */
+.contact-strip-right{
+display:flex;
+align-items:center;
+}
+
+.strip-btn{
 background:white;
 color:#1e73be;
-padding:12px 22px;
-border-radius:8px;
+padding:14px 26px;
+border-radius:6px;
+font-weight:700;
 text-decoration:none;
-font-weight:bold;
 transition:all 0.3s ease;
+white-space:nowrap;
 }
 
-.btn-strip:hover{
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
+.strip-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 18px rgba(0,0,0,0.25);
 }
 
 
@@ -640,17 +681,68 @@ MOBILE
 
 @media(max-width:768px){
 
+/* Menu hidden by default */
 nav{
-display:none;
-flex-direction:column;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background:#0c2d57; /* matches header blue */
+  width:100%;
+  overflow:hidden;
+  max-height:0; /* hidden */
+  transition:max-height 0.4s ease;
 }
 
+/* Menu visible when active */
 nav.active{
-display:flex;
+  max-height:500px; /* adjust if you have more links */
+  padding:15px 0;
 }
 
+/* Links styling */
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  padding:12px 0;
+  width:100%;
+  text-align:center;
+  transition:all 0.3s ease;
+}
+
+nav a:hover{
+  color:#1e73be; /* subtle hover effect */
+}
+
+/* Show toggle button on mobile */
 .menu-toggle{
-display:block;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:6px;
+  cursor:pointer;
+  z-index:1100;
+}
+
+/* Hamburger animation */
+.menu-toggle span{
+  width:28px;
+  height:3px;
+  background:white;
+  border-radius:2px;
+  transition:all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+  transform:rotate(45deg) translate(5px,5px);
+}
+
+.menu-toggle.active span:nth-child(2){
+  opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+  transform:rotate(-45deg) translate(5px,-5px);
 }
 
 .hero{
@@ -661,6 +753,16 @@ padding:80px 20px;
 .header-logo{
 height:45px;
 }
+
+.contact-strip-row{
+flex-direction:column;
+text-align:center;
+}
+
+.contact-strip-left{
+text-align:center;
+}
+
 
 }
 
