@@ -33,25 +33,6 @@ font-size:16px;
 line-height:1.7;
 }
 
-/* Top Phone Bar */
-.top-bar{
-background:#1e73be;
-padding:8px 0;
-text-align:right;
-transition:all 0.4s ease;
-}
-
-.top-bar a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.top-bar i{
-margin-right:6px;
-}
-
-
 /* =====================
 HEADER SECTION
 ===================== */
