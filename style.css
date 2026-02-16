@@ -33,6 +33,25 @@ font-size:16px;
 line-height:1.7;
 }
 
+/* Top Phone Bar */
+.top-bar{
+background:#1e73be;
+padding:8px 0;
+text-align:right;
+transition:all 0.4s ease;
+}
+
+.top-bar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.top-bar i{
+margin-right:6px;
+}
+
+
 /* =====================
 HEADER SECTION
 ===================== */
@@ -43,6 +62,7 @@ top:0;
 background:#0c2d57;
 color:white;
 z-index:1000;
+transition:all 0.4s ease;
 }
 
 .nav{
@@ -56,7 +76,49 @@ nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
+position:relative;
+font-weight:500;
+transition:all 0.3s ease;
 }
+
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:#1e73be;
+transition:width 0.3s ease;
+}
+
+nav a:hover{
+color:#1e73be;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+.nav-whatsapp{
+background:#25D366;
+padding:8px 16px;
+border-radius:6px;
+margin-left:25px;
+font-weight:bold;
+transition:all 0.3s ease;
+}
+
+.nav-whatsapp:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(0,0,0,0.25);
+color:white;
+}
+
+.nav-whatsapp::after{
+display:none; /* remove underline effect */
+}
+
 
 .menu-toggle{
 display:none;
@@ -123,6 +185,13 @@ border-radius:8px;
 color:white;
 text-decoration:none;
 font-weight:bold;
+transition:all 0.3s ease;
+}
+
+.btn-primary-custom:hover{
+background:#155d96;
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
 .btn-outline-custom{
@@ -132,7 +201,75 @@ border-radius:8px;
 color:white;
 text-decoration:none;
 font-weight:bold;
+transition:all 0.3s ease;
 }
+
+.btn-outline-custom:hover{
+background:white;
+color:#1e73be;
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45); /* darkness level */
+z-index:0;
+}
+
+.hero .container{
+position:relative;
+z-index:1;
+}
+
+/*CONTACT STRIP*/
+
+.contact-strip{
+background:#1e73be;
+color:white;
+padding:28px 20px;
+}
+
+.contact-strip-flex{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact-strip h2{
+margin:0;
+font-size:26px;
+font-weight:700;
+}
+
+.contact-strip p{
+margin:5px 0 0;
+font-size:16px;
+}
+
+.btn-strip{
+background:white;
+color:#1e73be;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:all 0.3s ease;
+}
+
+.btn-strip:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+
 
 /* =====================
 ABOUT SECTION
