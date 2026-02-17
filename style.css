@@ -308,9 +308,29 @@ line-height:1.6;
 
 .about h3{
 margin-top:20px;
-color:#0c2d57;
+}
+.about-card{
+  background:#f8fbff;            /* soft blue tint */
+  border-radius:14px;
+  border:1px solid #e3ecf7;
+  box-shadow:0 4px 14px rgba(0,0,0,0.05);
 }
 
+.about-card h2{
+  margin-bottom:15px;
+}
+
+.highlight{
+  color:#1e73be;   /* your site blue */
+  font-weight:600;
+}
+
+.about-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+}
 /* =====================
 ACCREDITATION LOGOS
 ===================== */
@@ -416,6 +436,52 @@ font-weight:600;
 letter-spacing:1px;
 }
 
+.project-overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:25px 20px;
+background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-end;
+text-align:center;
+gap:8px;
+}
+
+/* ICON */
+.project-icon{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#1e73be;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+color:white;
+opacity:0;
+transform:translateY(10px) scale(0.8);
+transition:all 0.35s ease;
+}
+
+/* SHOW ICON ON HOVER */
+.project-card:hover .project-icon{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+/* TEXT */
+.project-overlay h4{
+margin:0;
+font-weight:600;
+letter-spacing:1px;
+}
+
+
 /* FIX CAROUSEL FULL HEIGHT */
 
 .project-card .carousel,
@@ -433,26 +499,34 @@ object-fit:cover;
 
 /* WHY SECTION */
 .why-list li{
-margin-bottom:10px;
-font-size:16px;
+  margin-bottom:10px;
+  font-size:16px;
 }
 
 .why-list i{
-color:#1e73be;
-margin-right:8px;
+  color:#1e73be;
+  margin-right:8px;
 }
 
+/* IMAGES (NO EFFECTS) */
 .why-img{
-height:220px;
-object-fit:cover;
-width:100%;
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
 }
 
-.why li{
-font-size:16px;
-margin-bottom:10px;
+/* BUTTON HOVER EFFECT */
+#why .btn-primary{
+  transition:all 0.3s ease;
+  box-shadow:0 4px 12px rgba(30,115,190,0.25);
 }
 
+#why .btn-primary:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 22px rgba(30,115,190,0.35);
+  background:#1665a8; /* slightly darker blue */
+}
 
 
 /* =====================
@@ -790,64 +864,88 @@ font-size:16px;
 }
 
 
-/* Footer Top Section */
-#footer-top {
-  padding: 40px 20px;
-  background: #1e73be;
+/* =====================
+FOOTER TOP
+===================== */
+
+#footer-top{
+  width:100%;
+  background:#1e73be;
+  color:white;
 }
 
-.footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+/* TEXT */
+#footer-top h5{
+  color:white;
+  margin-bottom:15px;
+  font-weight:600;
 }
 
-.footer-col {
-  flex: 1 1 200px; /* Flexible column, min width 200px */
+#footer-top p,
+#footer-top a,
+#footer-top li{
+  color:rgba(255,255,255,0.9);
+  text-decoration:none;
+  transition:all 0.3s ease;
 }
 
-.footer-col h4 {
-  margin-bottom: 15px;
-  color: #007bff;
+#footer-top a:hover{
+  color:white;
 }
 
-.footer-nav {
-  list-style: none;
-  padding: 0;
+/* LIST */
+.contact-list{
+  list-style:none;
+  padding:0;
+  margin:0;
 }
 
-.footer-nav li {
-  margin-bottom: 10px;
+.contact-list li{
+  margin-bottom:8px;
 }
 
-.footer-nav li a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
+/* ICONS */
+#footer-top i{
+  margin-right:8px;
+  color:white;
 }
 
-.footer-nav li a:hover {
-  color: #007bff;
+/* SOCIAL */
+.social a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.15);
+  color:white;
+  margin:0 5px;
+  font-size:18px;
+  transition:all 0.3s ease;
 }
 
-.footer-logo {
-  max-width: 150px;
+.social a:hover{
+  background:white;
+  color:#1e73be;
+  transform:translateY(-3px);
 }
 
-.appointment .btn-contact {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+/* LOGO */
+.footer-logo{
+  max-width:150px;
 }
 
-.appointment .btn-contact:hover {
-  background-color: #0056b3;
+/* APPOINTMENT BOX */
+.contact-box{
+  background:rgba(255,255,255,0.12);
+  padding:20px;
+  border-radius:12px;
+  backdrop-filter:blur(4px);
+}
+
+.contact-box .btn{
+  font-weight:600;
 }
 
 /* Responsive */
