@@ -28,12 +28,37 @@ font-size:21px;
 font-weight:600;
 }
 
+/*FONTS*/
+
+h1{
+font-size:clamp(28px,5vw,52px);
+}
+
+h2{
+font-size:34px;
+}
+
+h3{
+font-size:21px;
+}
+
+p{
+font-size:16px;
+}
+
+li{
+font-size:16px;
+}
+
 body{
 font-size:16px;
 line-height:1.7;
 }
 
-/* MOBILE MENU TOGGLE */
+/* =====================
+MOBILE MENU TOGGLE
+===================== */
+
 .menu-toggle{
 display:none;
 flex-direction:column;
@@ -63,7 +88,6 @@ opacity:0;
 .menu-toggle.active span:nth-child(3){
 transform:rotate(-45deg) translate(6px,-6px);
 }
-
 
 /* =====================
 HEADER SECTION
@@ -138,8 +162,9 @@ width:auto;
 object-fit:contain;
 }
 
-
-/*HOME SECTION*/
+/* =====================
+HOME SECTION
+===================== */
 
 .hero{
 position:relative;
@@ -157,7 +182,6 @@ font-weight:700;
 font-size:18px;
 line-height:1.6;
 }
-
 
 .hero-content{
 max-width:650px;
@@ -234,7 +258,9 @@ position:relative;
 z-index:1;
 }
 
-/*CONTACT STRIP*/
+/* =====================
+CONTACT STRIP
+===================== */
 
 .contact-strip{
 background:#1e73be;
@@ -291,8 +317,6 @@ transform:translateY(-2px);
 box-shadow:0 8px 18px rgba(0,0,0,0.25);
 }
 
-
-
 /* =====================
 ABOUT SECTION
 ===================== */
@@ -325,6 +349,7 @@ margin-top:20px;
   object-fit:cover;
   border-radius:10px;
 }
+
 /* =====================
 ACCREDITATION LOGOS
 ===================== */
@@ -378,7 +403,6 @@ color:#1e73be;
 margin-right:8px;
 }
 
-
 /* =====================
 PROJECTS SECTION
 ===================== */
@@ -392,7 +416,6 @@ cursor:pointer;
 transition:all 0.3s ease;
 box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
-
 
 .project-card:hover{
 transform:translateY(-10px) scale(1.03);
@@ -490,8 +513,10 @@ width:100%;
 object-fit:cover;
 }
 
+/* =====================
+WHY SECTION
+===================== */
 
-/* WHY SECTION */
 .why-list li{
   margin-bottom:10px;
   font-size:16px;
@@ -522,7 +547,6 @@ object-fit:cover;
   box-shadow:0 10px 22px rgba(30,115,190,0.35);
   background:#1665a8; /* slightly darker blue */
 }
-
 
 /* =====================
 CONTACT SECTION
@@ -578,7 +602,6 @@ font-weight:500;
 .contact-box .btn-primary:hover{
 background:#155a94;
 }
-
 
 .contact-box input,
 .contact-box textarea{
@@ -668,8 +691,10 @@ background:#25D366;
 background:#1877F2;
 }
 
+/* =====================
+FLOATING BUTTONS BASE
+===================== */
 
-/* Floating buttons base */
 .callbtn,
 .whatsapp{
 position:fixed;
@@ -703,7 +728,6 @@ padding-left: 24px;
 padding-top: 18px;
 }
 
-
 /* Icons bigger */
 .callbtn i,
 .whatsapp i{
@@ -735,7 +759,83 @@ transform:translateX(-4px);
 }
 
 /* =====================
-FOOTER
+FOOTER TOP
+===================== */
+
+#footer-top{
+  width:100%;
+  background:#1e73be;
+  color:white;
+}
+
+/* TEXT */
+#footer-top h5{
+  color:white;
+  margin-bottom:15px;
+  font-weight:600;
+}
+
+#footer-top a:hover{
+  color:white;
+}
+
+/* LIST */
+.contact-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.contact-list li{
+  margin-bottom:8px;
+}
+
+/* ICONS */
+#footer-top i{
+  margin-right:8px;
+  color:white;
+}
+
+/* SOCIAL */
+.social a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.15);
+  color:white;
+  margin:0 5px;
+  font-size:18px;
+  transition:all 0.3s ease;
+}
+
+.social a:hover{
+  background:white;
+  color:#1e73be;
+  transform:translateY(-3px);
+}
+
+/* LOGO */
+.footer-logo{
+  max-width:150px;
+}
+
+/* APPOINTMENT BOX */
+.contact-box{
+  background:rgba(255,255,255,0.12);
+  padding:20px;
+  border-radius:12px;
+  backdrop-filter:blur(4px);
+}
+
+.contact-box .btn{
+  font-weight:600;
+}
+
+/* =====================
+FOOTER SECTION
 ===================== */
 
 footer{
@@ -832,115 +932,12 @@ text-align:center;
 text-align:center;
 }
 
-
-}
-
-
-/*FONTS*/
-
-h1{
-font-size:clamp(28px,5vw,52px);
-}
-
-h2{
-font-size:34px;
-}
-
-h3{
-font-size:21px;
-}
-
-p{
-font-size:16px;
-}
-
-li{
-font-size:16px;
-}
-
-
-/* =====================
-FOOTER TOP
-===================== */
-
-#footer-top{
-  width:100%;
-  background:#1e73be;
-  color:white;
-}
-
-/* TEXT */
-#footer-top h5{
-  color:white;
-  margin-bottom:15px;
-  font-weight:600;
-}
-
-#footer-top a:hover{
-  color:white;
-}
-
-/* LIST */
-.contact-list{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.contact-list li{
-  margin-bottom:8px;
-}
-
-/* ICONS */
-#footer-top i{
-  margin-right:8px;
-  color:white;
-}
-
-/* SOCIAL */
-.social a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  background:rgba(255,255,255,0.15);
-  color:white;
-  margin:0 5px;
-  font-size:18px;
-  transition:all 0.3s ease;
-}
-
-.social a:hover{
-  background:white;
-  color:#1e73be;
-  transform:translateY(-3px);
-}
-
-/* LOGO */
-.footer-logo{
-  max-width:150px;
-}
-
-/* APPOINTMENT BOX */
-.contact-box{
-  background:rgba(255,255,255,0.12);
-  padding:20px;
-  border-radius:12px;
-  backdrop-filter:blur(4px);
-}
-
-.contact-box .btn{
-  font-weight:600;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-columns {
+.footer-columns {
     flex-direction: column;
   }
   .footer-col {
     margin-bottom: 20px;
   }
+
 }
+
