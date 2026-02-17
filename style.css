@@ -768,15 +768,31 @@ FOOTER TOP
   color:white;
 }
 
+.c2 a{
+    color: white;
+    font-weight: 500;
+}
+
+.c3 a{
+color: white;
+}
+
+.c4 h5{
+color:black;
+}
+
+.c4 p{
+    color: black;
+}
+
 /* TEXT */
 #footer-top h5{
-  color:white;
   margin-bottom:15px;
   font-weight:600;
 }
 
 #footer-top a:hover{
-  color:white;
+  color:#0c2d57;
 }
 
 /* LIST */
@@ -792,7 +808,6 @@ FOOTER TOP
 
 /* ICONS */
 #footer-top i{
-  margin-right:8px;
   color:white;
 }
 
@@ -820,18 +835,6 @@ FOOTER TOP
 /* LOGO */
 .footer-logo{
   max-width:150px;
-}
-
-/* APPOINTMENT BOX */
-.contact-box{
-  background:rgba(255,255,255,0.12);
-  padding:20px;
-  border-radius:12px;
-  backdrop-filter:blur(4px);
-}
-
-.contact-box .btn{
-  font-weight:600;
 }
 
 /* =====================
