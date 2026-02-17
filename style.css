@@ -309,12 +309,6 @@ line-height:1.6;
 .about h3{
 margin-top:20px;
 }
-.about-card{
-  background:#f8fbff;            /* soft blue tint */
-  border-radius:14px;
-  border:1px solid #e3ecf7;
-  box-shadow:0 4px 14px rgba(0,0,0,0.05);
-}
 
 .about-card h2{
   margin-bottom:15px;
@@ -514,6 +508,7 @@ object-fit:cover;
   height:240px;
   object-fit:cover;
   display:block;
+  border-radius: 10px;
 }
 
 /* BUTTON HOVER EFFECT */
@@ -879,14 +874,6 @@ FOOTER TOP
   color:white;
   margin-bottom:15px;
   font-weight:600;
-}
-
-#footer-top p,
-#footer-top a,
-#footer-top li{
-  color:rgba(255,255,255,0.9);
-  text-decoration:none;
-  transition:all 0.3s ease;
 }
 
 #footer-top a:hover{
