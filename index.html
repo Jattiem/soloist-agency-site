@@ -171,7 +171,8 @@ With over <span class="highlight">40 years of combined experience</span> in plum
             <img src="images/Copy of Your paragraph text.png" class="about-img" alt="Transparent Pricing Image">
           </div>
           <div class="col-6">
-            <img src="images/male-hands-with-wrench-turning-off-valves.jpg" class="about-img" alt="Plumber using wrench on water valve">>
+            <img src="images/male-hands-with-wrench-turning-off-valves.jpg" class="about-img" alt="Plumber using wrench on water valve">
+
           </div>
         </div>
       </div>
@@ -612,7 +613,7 @@ autocomplete="off"></textarea>
 </a>
 
 <!-- FOOTER TOP / CONTACT STYLE SECTION -->
-<section id="footer-top">
+<section id="footer-top" class="footer-top">
 
   <div class="container py-5">
 
@@ -672,7 +673,7 @@ autocomplete="off"></textarea>
 
 
 <!--Footer-->
-<footer>
+<!--<footer>
  <div class="social-share">
 <span>Share:</span>
 <a href="https://www.facebook.com/sharer/sharer.php?u=https://soloistprojectsplumbing.co.za" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -681,6 +682,28 @@ autocomplete="off"></textarea>
 </div>
 
     <p>&copy; <span id="year"></span> SOLOIST PROJECTS (PTY) LTD. All Rights Reserved.</p>
+</footer>-->
+<!-- FOOTER -->
+<footer class="site-footer text-white py-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+      <!-- LEFT: SHARE BUTTONS -->
+      <div class="social-icons mb-3 mb-md-0">
+        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="bi bi-whatsapp"></i></a>
+      </div>
+
+      <!-- RIGHT: TEXT -->
+      <div class="footer-text text-md-end text-center">
+        © 2026 Soloist Projects Pty Ltd · All Rights Reserved  
+        <br>
+        <small>Mitchells Plain, Cape Town</small>
+      </div>
+
+    </div>
+  </div>
 </footer>
 
 <script>
@@ -688,6 +711,7 @@ autocomplete="off"></textarea>
     const currentYear = new Date().getFullYear();
     document.getElementById("year").innerHTML = (startYear === currentYear) ? startYear : `${startYear} - ${currentYear}`;
 </script>
+
 
 <script src="script.js"></script>
 
