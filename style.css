@@ -53,6 +53,12 @@ max-width:1200px;
 margin:auto;
 }
 
+/* FIX ANCHOR SCROLL FOR FIXED HEADER */
+section{
+  scroll-margin-top: 80px;
+}
+
+
 section h2{
 font-size:34px;
 font-weight:700;
@@ -428,6 +434,14 @@ box-shadow:0 8px 18px rgba(0,0,0,0.25);
 /* =====================
 ABOUT SECTION
 ===================== */
+
+/* ABOUT IMAGES MOBILE STACK */
+@media (max-width:768px){
+  #about .row.g-3 > div{
+    flex:0 0 100%;
+    max-width:100%;
+  }
+}
 
 img{
 max-width:100%;
@@ -1020,3 +1034,20 @@ text-align:center;
 
 }
 
+/* FIX HEADER ON MOBILE */
+@media (max-width: 992px){
+
+  #mainHeader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:#0c2d57;
+  }
+
+  body{
+    padding-top:40px; /* prevents content hiding under header */
+  }
+
+}
