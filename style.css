@@ -47,6 +47,10 @@ font-family:Arial;
 scroll-behavior:smooth;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 .container{
 width:90%;
 max-width:1200px;
