@@ -537,6 +537,7 @@ font-size:14px;
 .service-card ul li i{
 color:#1e73be;
 margin-right:8px;
+align-items: start;
 }
 
 /* =====================
