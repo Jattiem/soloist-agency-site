@@ -598,48 +598,72 @@ Weekdays: 08:00 – 17:00<br>
 
 <h3>Request a Service</h3>
 
-<form action="https://formspree.io/f/xdkewvyl" method="POST">
+<form action="https://formspree.io/f/x" method="POST" autocomplete="on" class="needs-validation" novalidate>
 
 <input type="hidden" name="_subject" value="New Plumbing Service Request - Soloist Projects">
 
+<!-- Name -->
 <div class="mb-3">
-<input name="fullname" type="text" class="form-control"
-placeholder="Full Name" required>
+  <input name="fullname" type="text" class="form-control"
+    placeholder="Full Name"
+    autocomplete="name"
+    required>
+  <div class="invalid-feedback">Please enter your full name</div>
 </div>
 
+<!-- Email -->
 <div class="mb-3">
-<input name="email" type="email" class="form-control"
-placeholder="Email Address" required>
+  <input name="email" type="email" class="form-control"
+    placeholder="Email Address"
+    autocomplete="email"
+    required>
+  <div class="invalid-feedback">Please enter a valid email</div>
 </div>
 
+<!-- Phone -->
 <div class="mb-3">
-<input name="phone" type="tel" class="form-control"
-placeholder="Phone Number" required>
+  <input name="phone" type="tel" class="form-control"
+    placeholder="Phone Number"
+    autocomplete="tel"
+    required>
+  <div class="invalid-feedback">Please enter your phone number</div>
 </div>
 
+<!-- Address -->
 <div class="mb-3">
-<select name="service" class="form-control" required>
-<option value="">Select Plumbing Problem</option>
-<option>Leak Repair</option>
-<option>Blocked Drain</option>
-<option>Geyser Installation</option>
-<option>Geyser Repair</option>
-<option>Burst Pipe</option>
-<option>Low Water Pressure</option>
-<option>Emergency Plumbing</option>
-<option>Other</option>
-</select>
+  <input id="address" name="address" type="text" class="form-control"
+    placeholder="Service Address"
+    autocomplete="street-address"
+    required>
+  <div class="invalid-feedback">Please enter service address</div>
 </div>
 
+<!-- Service -->
 <div class="mb-3">
-<textarea name="message" class="form-control"
-rows="4" placeholder="Describe your plumbing issue"></textarea>
+  <select name="service" class="form-control" required>
+    <option value="">Select Plumbing Problem</option>
+    <option>Leak Repair</option>
+    <option>Blocked Drain</option>
+    <option>Geyser Installation</option>
+    <option>Geyser Repair</option>
+    <option>Burst Pipe</option>
+    <option>Low Water Pressure</option>
+    <option>Emergency Plumbing</option>
+    <option>Other</option>
+  </select>
+  <div class="invalid-feedback">Please select a service</div>
 </div>
 
-<!-- Formspree reCAPTCHA automatically appears here -->
+<!-- Message -->
+<div class="mb-3">
+  <textarea name="message" class="form-control"
+    rows="4"
+    placeholder="Describe your plumbing issue"
+    autocomplete="off"></textarea>
+</div>
 
 <button type="submit" class="btn btn-primary w-100">
-Submit Request
+  Submit Request
 </button>
 
 </form>
@@ -673,7 +697,9 @@ Submit Request
       <!-- Column 1: Logo + Socials -->
       <div class="col-lg-3 col-md-6 footer-col">
         <div class="footer-brand">
-          <img src="images/LogoWeb.png" alt="Company Logo" class="footer-logo">
+          <a href="#home">
+            <img href="#home" src="images/LogoWeb.png" alt="Company Logo" class="footer-logo">
+          </a>
         </div>
       </div>
 
@@ -723,11 +749,40 @@ Submit Request
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
 
       <!-- LEFT: SHARE BUTTONS -->
-      <div class="social-icons mb-3 mb-md-0">
-        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="social-btn"><i class="bi bi-whatsapp"></i></a>
-      </div>
+<div class="social-icons mb-3 mb-md-0">
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://soloistprojectsplumbing.co.za"
+     target="_blank"
+     class="social-btn"
+     aria-label="Share on Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME"
+     target="_blank"
+     class="social-btn"
+     aria-label="Visit Instagram">
+    <i class="bi bi-instagram"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <!--<a href="https://wa.me/27YOUR_NUMBER"
+     target="_blank"
+     class="social-btn"
+     aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>-->
+  
+  <!-- WhatsApp -->
+  <a href="https://wa.me/27738367533"
+   target="_blank"
+   class="social-btn" aria-label="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+</div>
 
       <!-- RIGHT: TEXT -->
       <div class="footer-text text-md-end text-center">
@@ -746,6 +801,22 @@ Submit Request
     const startYear = 2026;
     const currentYear = new Date().getFullYear();
     document.getElementById("year").innerHTML = (startYear === currentYear) ? startYear : `${startYear} - ${currentYear}`;
+</script>
+
+<script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
 </script>
 
 

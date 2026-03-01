@@ -367,14 +367,7 @@ EMERGENCY STRIP SECTION
   border-radius:6px;
   text-decoration:none;
   font-weight:600;
-  transition:.3s;
 }
-
-.emergency-btn:hover{
-  background:#ffcd39;
-  transform:translateY(-2px);
-}
-
 
 /* =====================
 CONTACT STRIP
@@ -673,17 +666,7 @@ WHY SECTION
   border-radius: 10px;
 }
 
-/* BUTTON HOVER EFFECT */
-#why .btn-primary{
-  transition:all 0.3s ease;
-  box-shadow:0 4px 12px rgba(30,115,190,0.25);
-}
 
-#why .btn-primary:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 22px rgba(30,115,190,0.35);
-  background:#1665a8; /* slightly darker blue */
-}
 
 /* =====================
 CONTACT SECTION
